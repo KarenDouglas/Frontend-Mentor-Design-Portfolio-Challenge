@@ -2,6 +2,8 @@
 /* RESET */
 /* ------*/
 /* BOX SIZING*/
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap");
 *,
 *::before,
 *::after {
@@ -496,6 +498,18 @@ select {
   text-align: center;
 }
 
+.font-bold {
+  font-weight: 700;
+}
+
+.font-med {
+  font-weight: 500;
+}
+
+.font-reg {
+  font-family: 400;
+}
+
 .p-0_5 {
   padding: 8px;
 }
@@ -776,8 +790,51 @@ select {
   margin-bottom: 48px;
 }
 
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+button, a {
+  cursor: pointer;
+}
+
 .content {
   margin: 0 auto;
   max-width: 1111px;
   min-width: 339px;
+}
+.content h1 {
+  font-size: 3rem;
+}
+.content .consult-btn1 {
+  width: 228px;
+  border-radius: 32px;
+  border: none;
+  color: #fff7f0;
+  background-color: #030303;
+  font-weight: 700;
+}
+.content .consult-btn1:hover {
+  width: 228px;
+  border-radius: 32px;
+  border: none;
+  color: #fff7f0;
+  background-color: #755cde;
+}
+.content .pitch {
+  margin: 0 auto;
+  max-width: 752px;
+}
+.content .pitch p {
+  margin-inline: 60px;
+  font-weight: 500;
+}
+.content .design-types {
+  display: flex;
+}
+.content .consult-btn2 {
+  width: 228px;
+  border-radius: 32px;
+  border: none;
+  color: #fff7f0;
 }

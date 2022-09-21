@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap');
 // theme colors
 
 $Gal-Blue: #755cde;
@@ -23,9 +23,18 @@ $colors:(
     "light-cream": $Light-Cream
 );
 
-// font sizes to rem 
+// Font Family, weight font sizes to rem 
 $F14px: .875rem;
 $F16px: 1rem;
 $F20px: 1.25rem;
 $F24px: 1.5rem;
 $F32px: 2rem;
+$F40px: 2.5rem;
+$F48px: 3rem;
+
+$FontFamily: 'Raleway', sans-serif;
+$F-sm: 400;
+$F-md: 500;
+$F-lg: 700;
+
+

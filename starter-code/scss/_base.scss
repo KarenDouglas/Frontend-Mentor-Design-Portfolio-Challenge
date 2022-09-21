@@ -1,7 +1,56 @@
+// fonts
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap');
+// Main basic layout and features
 
-
+body{
+ font-family: $FontFamily;
+}
+button, a{
+    cursor: pointer;
+}
 .content{
     margin: 0 auto;
     max-width: 1111px;
     min-width: 339px;
+    h1{
+        font-size: $F48px;
+    }
+    
+    // button and button hover
+        .consult-btn1{
+        width: 228px;
+        border-radius: 32px;
+        border: none;
+        color: $Light-Cream;
+        background-color: $Black;
+        font-weight: $F-lg;
+    }
+    .consult-btn1:hover{
+        width: 228px;
+        border-radius: 32px;
+        border: none;
+        color: $Light-Cream;
+        background-color: $Gal-Blue;
+    }
+    .pitch{
+        margin: 0 auto;
+        max-width: 752px;
+        p{
+            margin-inline: 60px;
+            font-weight: $F-md;
+        }
+    }
+    // pictures layout
+    .design-types{
+        display: flex;
+    }
+    // bottom button
+    .consult-btn2{
+        width: 228px;
+        border-radius: 32px;
+        border: none;
+        color: $Light-Cream
+    }
+    
 }
+
