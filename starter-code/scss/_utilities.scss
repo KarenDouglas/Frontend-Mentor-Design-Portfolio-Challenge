@@ -1,0 +1,181 @@
+@use 'sass:math';
+
+// Utilities
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+.flex-row{
+    display: flex;
+    flex-direction: row;
+}
+.flex-row-rev{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.flex-col-rev{
+    display: flex;
+    flex-direction: column-reverse;
+}
+.space-between{
+    justify-content: space-between;
+    
+}
+.space-around{
+    justify-content: space-around;
+    
+    }
+.align-center{
+    align-items: center;
+}
+.text-center{
+    text-align: center;
+}
+
+
+
+
+
+$utilities: (
+    "padding": (
+        "prefix": "p",
+        "values":(
+            "0_5": 8px,
+            "0": 0,
+            "1": 16px ,    
+            "2": 24px,
+            "3": 32px,
+            "4": 40px,
+            "5": 48px
+        )
+    ),
+    "padding-left": (
+        "prefix": "pl",
+        "values":(
+            "0_5": 8px,
+            "0": 0,
+           "1": 16px ,    
+            "2": 24px,
+            "3": 32px,
+            "4": 40px,
+            "5": 48px
+        )
+    ),
+    "padding-right": (
+        "prefix": "pr",
+        "values":(
+            "0_5": 8px,
+            "0": 0,
+           "1": 16px ,    
+            "2": 24px,
+            "3": 32px,
+            "4": 40px,
+            "5": 48px
+        )
+    ),
+    "padding-top": (
+        "prefix": "pt",
+        "values":(
+            "0_5": 8px,
+            "0": 0,
+           "1": 16px ,    
+            "2": 24px,
+            "3": 32px,
+            "4": 40px,
+            "5": 48px
+        )
+    ),
+    "padding-bottom": (
+        "prefix": "pb",
+        "values":(
+            "0_5": 8px,
+            "0": 0,
+           "1": 16px ,    
+            "2": 24px,
+            "3": 32px,
+            "4": 40px,
+            "5": 48px
+        )
+    ),
+    "margin": (
+        "prefix": "m",
+        "values":(
+            "0_5": 8px,
+            "0": 0,
+           "1": 16px ,    
+            "2": 24px,
+            "3": 32px,
+            "4": 40px,
+            "5": 48px
+        )
+    ),
+    "margin-left": (
+        "prefix": "ml",
+        "values":(
+            "0_5": 8px,
+            "0": 0,
+           "1": 16px ,    
+            "2": 24px,
+            "3": 32px,
+            "4": 40px,
+            "5": 48px
+        )
+    ),
+    "margin-right": (
+        "prefix": "mr",
+        "values":(
+            "0_5": 8px,
+            "0": 0,
+           "1": 16px ,    
+            "2": 24px,
+            "3": 32px,
+            "4": 40px,
+            "5": 48px
+        )
+    ),
+    "margin-top": (
+        "prefix": "mt",
+        "values":(
+            "0_5": 8px,
+            "0": 0,
+           "1": 16px ,    
+            "2": 24px,
+            "3": 32px,
+            "4": 40px,
+            "5": 48px
+        )
+    ),
+    "margin-bottom": (
+        "prefix": "mb",
+        "values":(
+            "0_5": 8px,
+            "0": 0,
+           "1": 16px ,    
+            "2": 24px,
+            "3": 32px,
+            "4": 40px,
+            "5": 48px
+        )
+    ),
+
+);
+
+// generating utility classes
+
+@each $property, $map in $utilities{
+    $prefix : map-get($map, "prefix" );
+    $values : map-get($map, "values" );
+
+    @each $key, $value in $values{
+        @if($key =="default"){
+            .#{$prefix}{
+                #{$property}: $value;
+            }
+        } @else{
+            .#{$prefix}-#{$key} {
+                #{$property}: $value;
+            }
+        }
+    }
+}
