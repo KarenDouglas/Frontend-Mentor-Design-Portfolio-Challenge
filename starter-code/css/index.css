@@ -829,8 +829,92 @@ button, a {
   margin-inline: 60px;
   font-weight: 500;
 }
-.content .design-types {
+.content .design-types .row {
   display: flex;
+}
+.content .design-types .row i {
+  display: flex;
+  justify-content: flex-end;
+}
+.content .design-types .row p {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.content .design-types .row .uiux-img, .content .design-types .row .apps-img, .content .design-types .row .photo-img, .content .design-types .row .motion-graph-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 12px;
+  padding: 24px;
+}
+.content .design-types .row .uiux-img, .content .design-types .row .apps-img {
+  width: 164px;
+  height: 170px;
+}
+.content .design-types .row .illustration-img, .content .design-types .row .photo-img, .content .design-types .row .motion-graph-img {
+  height: 170px;
+}
+.content .design-types .row .graphic-img, .content .design-types .row .illustration-img {
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 24px;
+}
+@media (min-width: 480px) {
+  .content .design-types .row {
+    flex-direction: column;
+  }
+  .content .design-types .row .ui-illustration-group {
+    background-color: purple;
+  }
+}
+@media (min-width: 720px) {
+  .content .design-types .row {
+    flex-direction: row;
+  }
+  .content .design-types .row .ui-illustration-group {
+    background-color: pink;
+  }
+}
+@media (min-width: 960px) {
+  .content .design-types .row {
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 364px;
+  }
+  .content .design-types .row .ui-illustration-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: transparent;
+  }
+  .content .design-types .row .graphic-img, .content .design-types .row .ui-illustration-group, .content .design-types .row .photo-motion-group {
+    width: 350px;
+    height: 100%;
+  }
+}
+.content .design-types .row .photo-motion-group {
+  height: 100%;
+  justify-content: space-between;
+}
+@media (min-width: 960px) {
+  .content .design-types .row .photo-motion-group {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (min-width: 720px) {
+  .content .design-types .row .photo-motion-group {
+    display: flex;
+    flex-direction: row;
+  }
+}
+@media (min-width: 480px) {
+  .content .design-types .row .photo-motion-group {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .content .consult-btn2 {
   width: 228px;
