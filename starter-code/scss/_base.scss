@@ -13,7 +13,15 @@ button, a{
     max-width: 1111px;
     min-width: 339px;
     h1{
-        font-size: $F48px;
+       
+        
+       
+        @include xs{
+            font-size: $F40px;
+        }
+        @include md{
+            font-size: $F48px;
+        }
     }
     
     // button and button hover
@@ -42,7 +50,10 @@ button, a{
     }
     // pictures layout
     .design-types .row{
+      
         display: flex;
+        justify-content: space-around;
+
         // alignment for text in images inside css immages
         i{
         display: flex;
@@ -52,6 +63,10 @@ button, a{
         font-size: $F24px;
         font-weight: $F-lg;
         }
+        .uiux-img, .apps-img{
+            width: 164px;
+            height: 170px;
+        }
         .uiux-img, .apps-img, .photo-img, .motion-graph-img{
             display: flex;
             flex-direction: column;
@@ -59,10 +74,7 @@ button, a{
             border-radius: 12px;
             padding: 24px;
         }
-        .uiux-img, .apps-img{
-            width: 164px;
-            height: 170px;
-        }
+        
         .illustration-img, .photo-img, .motion-graph-img {
             height: 170px;
         }
@@ -75,58 +87,84 @@ button, a{
            
           
         }
-        @include sm{
+        .ui-illustration-group{
+            display: flex;
             flex-direction: column;
-            .ui-illustration-group{
-                background-color: purple;
+            justify-content: space-between;
+        }
+        .photo-motion-group{
+            height: 100%;
+            justify-content: space-between;
+        }
+        @include xs{
+            flex-direction: column;
+          
+          align-items: center;
+            .photo-motion-group{
+                display: flex;
+                flex-direction: column;
+            }
+            .graphic-img, .ui-illustration-group, .photo-img, .motion-graph-img{
+                margin-bottom: 20px;
+
+            }
+            .graphic-img, .ui-illustration-group, .photo-motion-group{
+                height: 364px;
+                width: 85%;
+
             }
         }
-        @include md{
+        @include sm{
+            
             flex-direction: row;
-            .ui-illustration-group{
-                background-color: pink;
+            align-items: center;
+            justify-content: space-around;
+            .photo-motion-group{
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                margin-top: 16px;
+              
+            }
+            .uiux-img, .apps-img{
+                width: 46%;
+             
+            }
+            .graphic-img, .ui-illustration-group{
+                height: 354px;
+                
+            }
+            .graphic-img, .ui-illustration-group, .photo-img, .motion-graph-img{
+                width: 47%;
+                margin-bottom: 0px;
+
             }
         }
        
        
         //  Images for large screens
-        @include lg{
+        @include md{
             flex-direction: row;
-            justify-content: space-evenly;
             height: 364px;
-            .ui-illustration-group{
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                background-color: transparent;
-               
-            }
             .graphic-img, .ui-illustration-group, .photo-motion-group{
-              width: 350px;
+              width: 31%;
                height: 100%;
             }
-           
-        }
-       
-       
-        .photo-motion-group{
-            height: 100%;
+           .photo-motion-group{
+            display: flex;
+            flex-direction: column;
             justify-content: space-between;
-            @include lg{
-                display: flex;
-                flex-direction: column;
-                
+            margin: 0;
+            .photo-img, .motion-graph-img{
+                width: 100%;
             }
-            @include md{
-                display: flex;
-                flex-direction: row;
-            }
-            @include sm{
-                display: flex;
-                flex-direction: column;
-            }
+           
+           }
         }
-    }
+       
+    }    
+       
     // bottom button
     .consult-btn2{
         width: 228px;

@@ -803,8 +803,15 @@ button, a {
   max-width: 1111px;
   min-width: 339px;
 }
-.content h1 {
-  font-size: 3rem;
+@media (min-width: 0) {
+  .content h1 {
+    font-size: 2.5rem;
+  }
+}
+@media (min-width: 720px) {
+  .content h1 {
+    font-size: 3rem;
+  }
 }
 .content .consult-btn1 {
   width: 228px;
@@ -831,6 +838,7 @@ button, a {
 }
 .content .design-types .row {
   display: flex;
+  justify-content: space-around;
 }
 .content .design-types .row i {
   display: flex;
@@ -840,16 +848,16 @@ button, a {
   font-size: 1.5rem;
   font-weight: 700;
 }
+.content .design-types .row .uiux-img, .content .design-types .row .apps-img {
+  width: 164px;
+  height: 170px;
+}
 .content .design-types .row .uiux-img, .content .design-types .row .apps-img, .content .design-types .row .photo-img, .content .design-types .row .motion-graph-img {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   border-radius: 12px;
   padding: 24px;
-}
-.content .design-types .row .uiux-img, .content .design-types .row .apps-img {
-  width: 164px;
-  height: 170px;
 }
 .content .design-types .row .illustration-img, .content .design-types .row .photo-img, .content .design-types .row .motion-graph-img {
   height: 170px;
@@ -861,59 +869,73 @@ button, a {
   justify-content: space-between;
   padding: 24px;
 }
-@media (min-width: 480px) {
-  .content .design-types .row {
-    flex-direction: column;
-  }
-  .content .design-types .row .ui-illustration-group {
-    background-color: purple;
-  }
-}
-@media (min-width: 720px) {
-  .content .design-types .row {
-    flex-direction: row;
-  }
-  .content .design-types .row .ui-illustration-group {
-    background-color: pink;
-  }
-}
-@media (min-width: 960px) {
-  .content .design-types .row {
-    flex-direction: row;
-    justify-content: space-evenly;
-    height: 364px;
-  }
-  .content .design-types .row .ui-illustration-group {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-color: transparent;
-  }
-  .content .design-types .row .graphic-img, .content .design-types .row .ui-illustration-group, .content .design-types .row .photo-motion-group {
-    width: 350px;
-    height: 100%;
-  }
+.content .design-types .row .ui-illustration-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .content .design-types .row .photo-motion-group {
   height: 100%;
   justify-content: space-between;
 }
-@media (min-width: 960px) {
+@media (min-width: 0) {
+  .content .design-types .row {
+    flex-direction: column;
+    align-items: center;
+  }
   .content .design-types .row .photo-motion-group {
     display: flex;
     flex-direction: column;
   }
-}
-@media (min-width: 720px) {
-  .content .design-types .row .photo-motion-group {
-    display: flex;
-    flex-direction: row;
+  .content .design-types .row .graphic-img, .content .design-types .row .ui-illustration-group, .content .design-types .row .photo-img, .content .design-types .row .motion-graph-img {
+    margin-bottom: 20px;
+  }
+  .content .design-types .row .graphic-img, .content .design-types .row .ui-illustration-group, .content .design-types .row .photo-motion-group {
+    height: 364px;
+    width: 85%;
   }
 }
 @media (min-width: 480px) {
+  .content .design-types .row {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .content .design-types .row .photo-motion-group {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 16px;
+  }
+  .content .design-types .row .uiux-img, .content .design-types .row .apps-img {
+    width: 46%;
+  }
+  .content .design-types .row .graphic-img, .content .design-types .row .ui-illustration-group {
+    height: 354px;
+  }
+  .content .design-types .row .graphic-img, .content .design-types .row .ui-illustration-group, .content .design-types .row .photo-img, .content .design-types .row .motion-graph-img {
+    width: 47%;
+    margin-bottom: 0px;
+  }
+}
+@media (min-width: 720px) {
+  .content .design-types .row {
+    flex-direction: row;
+    height: 364px;
+  }
+  .content .design-types .row .graphic-img, .content .design-types .row .ui-illustration-group, .content .design-types .row .photo-motion-group {
+    width: 31%;
+    height: 100%;
+  }
   .content .design-types .row .photo-motion-group {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+  }
+  .content .design-types .row .photo-motion-group .photo-img, .content .design-types .row .photo-motion-group .motion-graph-img {
+    width: 100%;
   }
 }
 .content .consult-btn2 {
