@@ -27,6 +27,12 @@ button, a{
     // button and button hover
         .consult-btn1{
         width: 228px;
+        @include xs{
+            height: 44px;
+          }
+        @include sm{
+            height: 56px;
+        }
         border-radius: 32px;
         border: none;
         color: $Light-Cream;
@@ -35,6 +41,12 @@ button, a{
     }
     .consult-btn1:hover{
         width: 228px;
+        @include xs{
+            height: 44px;
+          }
+      @include sm{
+        height: 56px;
+      }
         border-radius: 32px;
         border: none;
         color: $Light-Cream;
@@ -50,7 +62,6 @@ button, a{
     }
     // pictures layout
     .design-types .row{
-      
         display: flex;
         justify-content: space-around;
 
@@ -93,8 +104,8 @@ button, a{
             justify-content: space-between;
         }
         .photo-motion-group{
-            height: 100%;
             justify-content: space-between;
+          
         }
         @include xs{
             flex-direction: column;
@@ -121,6 +132,7 @@ button, a{
             justify-content: space-around;
             .photo-motion-group{
                 width: 100%;
+                height: fit-content;
                 display: flex;
                 flex-direction: row;
                 justify-content: space-around;
@@ -164,13 +176,75 @@ button, a{
         }
        
     }    
-       
+    .introduction{
+    
+        height: 455px;
+        display: flex;
+        margin-top: 153px;
+        align-items: center;
+     
+        i {
+            height: 445px;
+         
+         
+        }
+          .intro{
+    
+            height: 100%;
+            padding: 59px 0;
+        }
+        @include xs{
+            h2{
+                font-size: $F24px;
+            }
+            .intro{
+                width: 339px;
+            }
+            i{
+                max-height:100%;
+                max-width: 364px;
+            }
+        }
+        @include sm{
+            display: flex;
+            h2{
+                font-size: $F40px;
+            }
+        
+            .intro{
+                display: flex;
+                flex-direction: column;
+            width: 47%;
+            }
+            i img{
+                height: 100%;
+           
+            }
+        }
+    }
     // bottom button
     .consult-btn2{
         width: 228px;
+        @include xs{
+            height: 44px;
+          }
+      @include sm{
+        height: 56px;
+      }
+    
         border-radius: 32px;
         border: none;
-        color: $Light-Cream
+        color: $Light-Cream;
+        background-color: $Light-Red;
+        font-weight: $F-lg;
+    }
+    .consult-btn2:hover{
+
+        width: 228px;
+        border-radius: 32px;
+        border: none;
+        color: $Light-Cream;
+        background-color: $Sum-Yellow;
     }
     
 }

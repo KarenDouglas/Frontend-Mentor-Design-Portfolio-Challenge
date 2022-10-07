@@ -821,12 +821,32 @@ button, a {
   background-color: #030303;
   font-weight: 700;
 }
+@media (min-width: 0) {
+  .content .consult-btn1 {
+    height: 44px;
+  }
+}
+@media (min-width: 480px) {
+  .content .consult-btn1 {
+    height: 56px;
+  }
+}
 .content .consult-btn1:hover {
   width: 228px;
   border-radius: 32px;
   border: none;
   color: #fff7f0;
   background-color: #755cde;
+}
+@media (min-width: 0) {
+  .content .consult-btn1:hover {
+    height: 44px;
+  }
+}
+@media (min-width: 480px) {
+  .content .consult-btn1:hover {
+    height: 56px;
+  }
 }
 .content .pitch {
   margin: 0 auto;
@@ -875,7 +895,6 @@ button, a {
   justify-content: space-between;
 }
 .content .design-types .row .photo-motion-group {
-  height: 100%;
   justify-content: space-between;
 }
 @media (min-width: 0) {
@@ -903,6 +922,7 @@ button, a {
   }
   .content .design-types .row .photo-motion-group {
     width: 100%;
+    height: fit-content;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -938,9 +958,69 @@ button, a {
     width: 100%;
   }
 }
+.content .introduction {
+  height: 455px;
+  display: flex;
+  margin-top: 153px;
+  align-items: center;
+}
+.content .introduction i {
+  height: 445px;
+}
+.content .introduction .intro {
+  height: 100%;
+  padding: 59px 0;
+}
+@media (min-width: 0) {
+  .content .introduction h2 {
+    font-size: 1.5rem;
+  }
+  .content .introduction .intro {
+    width: 339px;
+  }
+  .content .introduction i {
+    max-height: 100%;
+    max-width: 364px;
+  }
+}
+@media (min-width: 480px) {
+  .content .introduction {
+    display: flex;
+  }
+  .content .introduction h2 {
+    font-size: 2.5rem;
+  }
+  .content .introduction .intro {
+    display: flex;
+    flex-direction: column;
+    width: 47%;
+  }
+  .content .introduction i img {
+    height: 100%;
+  }
+}
 .content .consult-btn2 {
   width: 228px;
   border-radius: 32px;
   border: none;
   color: #fff7f0;
+  background-color: #eb7565;
+  font-weight: 700;
+}
+@media (min-width: 0) {
+  .content .consult-btn2 {
+    height: 44px;
+  }
+}
+@media (min-width: 480px) {
+  .content .consult-btn2 {
+    height: 56px;
+  }
+}
+.content .consult-btn2:hover {
+  width: 228px;
+  border-radius: 32px;
+  border: none;
+  color: #fff7f0;
+  background-color: #f6a560;
 }
