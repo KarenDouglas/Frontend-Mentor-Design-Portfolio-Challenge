@@ -308,7 +308,59 @@ button, a{
         color: $Light-Cream;
         background-color: $Sum-Yellow;
     }
+    .cta{
+        
+        color:white;
+        height: 352px;
+        border-radius: 10px;
+        @include xs{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            text-align: center;
+            padding: 56px 75px;
+            button{
+            margin: 0 auto;;
+
+            }
+        }
+
+        @include md{
+            display: block;
+            position: relative;
+          
+            h2{
+                float: left;
+                text-align: left;
+                margin-bottom: 25px;
+                font-size: $F40px;
+            }
+            p{
+               clear: both;
+                width: 50%;
+                text-align: left;
+            }
+            button{
+            position: absolute;
+            right: 75px;
+            top: 140px;
+                
+           
+            }
+        }
+    }
+    @include xs{
+         .logo{
+        width: 44px;
+        }
+    }
+    @include sm{
+        .logo{
+            width: 64px;
+        }
+    }
     
+  
 }
 
  // My Work Section
@@ -316,8 +368,9 @@ button, a{
  .work{
    @include xs{
        h2{
+        font-size: $F24px;
            text-align: center;
-           margin-top: 86px;
+           margin: 65px;
        }
        .slider{
         display: flex;
@@ -349,6 +402,12 @@ button, a{
         background-color: $Gal-Blue;
         padding: 40px;
        }
+   }
+   @include md{
+    h2{
+        font-size: $F32px;
+        margin: 86px;
+    }
    }
 }
 

@@ -1075,11 +1075,61 @@ button, a {
   color: #fff7f0;
   background-color: #f6a560;
 }
+.content .cta {
+  color: white;
+  height: 352px;
+  border-radius: 10px;
+}
+@media (min-width: 0) {
+  .content .cta {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    padding: 56px 75px;
+  }
+  .content .cta button {
+    margin: 0 auto;
+  }
+}
+@media (min-width: 720px) {
+  .content .cta {
+    display: block;
+    position: relative;
+  }
+  .content .cta h2 {
+    float: left;
+    text-align: left;
+    margin-bottom: 25px;
+    font-size: 2.5rem;
+  }
+  .content .cta p {
+    clear: both;
+    width: 50%;
+    text-align: left;
+  }
+  .content .cta button {
+    position: absolute;
+    right: 75px;
+    top: 140px;
+  }
+}
+@media (min-width: 0) {
+  .content .logo {
+    width: 44px;
+  }
+}
+@media (min-width: 480px) {
+  .content .logo {
+    width: 64px;
+  }
+}
 
 @media (min-width: 0) {
   .work h2 {
+    font-size: 1.5rem;
     text-align: center;
-    margin-top: 86px;
+    margin: 65px;
   }
   .work .slider {
     display: flex;
@@ -1109,5 +1159,11 @@ button, a {
     clip-path: circle(30%);
     background-color: #755cde;
     padding: 40px;
+  }
+}
+@media (min-width: 720px) {
+  .work h2 {
+    font-size: 2rem;
+    margin: 86px;
   }
 }
