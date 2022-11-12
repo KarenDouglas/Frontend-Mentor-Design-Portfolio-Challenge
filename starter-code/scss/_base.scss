@@ -178,50 +178,112 @@ button, a{
     }    
     .introduction{
     
-        height: 455px;
+    
         display: flex;
         margin-top: 153px;
-        align-items: center;
+      
      
         i {
             height: 445px;
          
          
         }
-          .intro{
-    
-            height: 100%;
-            padding: 59px 0;
-        }
+   
         @include xs{
+            flex-direction: column;
             h2{
                 font-size: $F24px;
             }
             .intro{
                 width: 339px;
+                text-align: center;
+                margin: auto;
+                h3,p{
+                    margin-bottom: 15px;
+                }
             }
             i{
+              margin: auto;
                 max-height:100%;
                 max-width: 364px;
             }
         }
         @include sm{
-            display: flex;
-            h2{
-                font-size: $F40px;
+            
+          flex-direction: row;
+            height: 364px;
+            position: relative;
+            h3{
+                font-size: 1.725em;
+  
             }
-        
+            p{
+                font-size: .875em;
+                line-height: 24px;
+            }
             .intro{
+                padding: 0;
                 display: flex;
                 flex-direction: column;
-            width: 47%;
+                width: 47%;
+                position: absolute;
+                top: 10px;
+                right: 0;
+                text-align: left;
+                margin: 0;
+               
+            
             }
-            i img{
-                height: 100%;
-           
+            i{ 
+                margin: 0;
+             
+              position: relative;
+               top: 0;
+               left: -35px;
+                img{
+                    height:80%;
+
+                }
+              
             }
+          
         }
+        @include md{
+            height: 455px;
+            h3{
+                font-size: $F40px;
+                margin: 0;
+             
+            }
+            p{
+                font-size: 1.125em;
+                line-height: 24px;
+                margin: 0;
+            }
+            .intro{
+    
+                height: 100%;
+                padding: 59px 0;
+                justify-content: space-between;
+               position: relative;
+              
+            }
+            i{
+               position: relative;
+                top: 0;
+                left: 0;
+               clip-path: inset(0px);
+               transition: .5s clip-path  ease;
+                img{
+                height: 88%;
+
+                }
+              
+            } 
+        }
+
     }
+   
     // bottom button
     .consult-btn2{
         width: 228px;
@@ -247,5 +309,46 @@ button, a{
         background-color: $Sum-Yellow;
     }
     
+}
+
+ // My Work Section
+
+ .work{
+   @include xs{
+       h2{
+           text-align: center;
+           margin-top: 86px;
+       }
+       .slider{
+        display: flex;
+        overflow: scroll;
+        scroll-behavior: smooth;
+        scroll-snap-type: x mandatory;
+        text-decoration: none;
+        img{
+                  width: 75%;
+                  margin:0 2.5%;
+                  scroll-snap-align: center;
+        }
+        
+       }
+       .slide-btn{
+           text-align: center;
+       }
+       button{
+        margin: 10px 0;
+        border: none;
+        clip-path: circle(30%);
+        background-color: $Black;
+        padding: 40px;
+       }
+       button:hover{
+        margin: 10px 0;
+        border: none;
+        clip-path: circle(30%);
+        background-color: $Gal-Blue;
+        padding: 40px;
+       }
+   }
 }
 

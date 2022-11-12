@@ -791,7 +791,7 @@ select {
 }
 
 body {
-  font-family: "Raleway", sans-serif;
+  font-family: "Plus Jakarta", sans-serif;
 }
 
 button, a {
@@ -959,44 +959,95 @@ button, a {
   }
 }
 .content .introduction {
-  height: 455px;
   display: flex;
   margin-top: 153px;
-  align-items: center;
 }
 .content .introduction i {
   height: 445px;
 }
-.content .introduction .intro {
-  height: 100%;
-  padding: 59px 0;
-}
 @media (min-width: 0) {
+  .content .introduction {
+    flex-direction: column;
+  }
   .content .introduction h2 {
     font-size: 1.5rem;
   }
   .content .introduction .intro {
     width: 339px;
+    text-align: center;
+    margin: auto;
+  }
+  .content .introduction .intro h3, .content .introduction .intro p {
+    margin-bottom: 15px;
   }
   .content .introduction i {
+    margin: auto;
     max-height: 100%;
     max-width: 364px;
   }
 }
 @media (min-width: 480px) {
   .content .introduction {
-    display: flex;
+    flex-direction: row;
+    height: 364px;
+    position: relative;
   }
-  .content .introduction h2 {
-    font-size: 2.5rem;
+  .content .introduction h3 {
+    font-size: 1.725em;
+  }
+  .content .introduction p {
+    font-size: 0.875em;
+    line-height: 24px;
   }
   .content .introduction .intro {
+    padding: 0;
     display: flex;
     flex-direction: column;
     width: 47%;
+    position: absolute;
+    top: 10px;
+    right: 0;
+    text-align: left;
+    margin: 0;
+  }
+  .content .introduction i {
+    margin: 0;
+    position: relative;
+    top: 0;
+    left: -35px;
   }
   .content .introduction i img {
+    height: 80%;
+  }
+}
+@media (min-width: 720px) {
+  .content .introduction {
+    height: 455px;
+  }
+  .content .introduction h3 {
+    font-size: 2.5rem;
+    margin: 0;
+  }
+  .content .introduction p {
+    font-size: 1.125em;
+    line-height: 24px;
+    margin: 0;
+  }
+  .content .introduction .intro {
     height: 100%;
+    padding: 59px 0;
+    justify-content: space-between;
+    position: relative;
+  }
+  .content .introduction i {
+    position: relative;
+    top: 0;
+    left: 0;
+    clip-path: inset(0px);
+    transition: 0.5s clip-path ease;
+  }
+  .content .introduction i img {
+    height: 88%;
   }
 }
 .content .consult-btn2 {
@@ -1023,4 +1074,40 @@ button, a {
   border: none;
   color: #fff7f0;
   background-color: #f6a560;
+}
+
+@media (min-width: 0) {
+  .work h2 {
+    text-align: center;
+    margin-top: 86px;
+  }
+  .work .slider {
+    display: flex;
+    overflow: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    text-decoration: none;
+  }
+  .work .slider img {
+    width: 75%;
+    margin: 0 2.5%;
+    scroll-snap-align: center;
+  }
+  .work .slide-btn {
+    text-align: center;
+  }
+  .work button {
+    margin: 10px 0;
+    border: none;
+    clip-path: circle(30%);
+    background-color: #030303;
+    padding: 40px;
+  }
+  .work button:hover {
+    margin: 10px 0;
+    border: none;
+    clip-path: circle(30%);
+    background-color: #755cde;
+    padding: 40px;
+  }
 }
