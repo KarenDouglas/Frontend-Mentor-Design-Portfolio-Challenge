@@ -1133,10 +1133,9 @@ button, a {
   }
   .work .slider {
     display: flex;
-    overflow: scroll;
+    overflow: hidden;
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
-    text-decoration: none;
   }
   .work .slider img {
     width: 75%;

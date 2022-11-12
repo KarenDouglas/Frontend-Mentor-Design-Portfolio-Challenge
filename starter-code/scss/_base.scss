@@ -374,10 +374,10 @@ button, a{
        }
        .slider{
         display: flex;
-        overflow: scroll;
+        overflow: hidden;
         scroll-behavior: smooth;
         scroll-snap-type: x mandatory;
-        text-decoration: none;
+      
         img{
                   width: 75%;
                   margin:0 2.5%;
