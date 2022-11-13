@@ -10,7 +10,7 @@ button, a{
 }
 .content{
     margin: 0 auto;
-    max-width: 11110.px;
+    max-width: 1111px;
     min-width: 339px;
     h1{
        
@@ -408,6 +408,19 @@ button, a{
         font-size: $F32px;
         margin: 86px;
     }
+    .slider{
+        display: flex;
+        overflow: hidden;
+        scroll-behavior: smooth;
+        scroll-snap-type: x mandatory;
+      
+        img{
+                  width: 20%;
+                  margin:0 2.5%;
+                  scroll-snap-align: center;
+        }
+        
+       }
    }
 }
 

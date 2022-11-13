@@ -1165,4 +1165,15 @@ button, a {
     font-size: 2rem;
     margin: 86px;
   }
+  .work .slider {
+    display: flex;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+  }
+  .work .slider img {
+    width: 20%;
+    margin: 0 2.5%;
+    scroll-snap-align: center;
+  }
 }
