@@ -14,7 +14,7 @@ console.log(sliderImg)
 
 nxtBtn.addEventListener('click', ()=>{
     let imgDimensions = sliderImg.getBoundingClientRect();
-   let imgWidth=  imgDimensions.width - 7;
+   let imgWidth=  imgDimensions.width;
     slider.scrollLeft += imgWidth;
 })
 preBtn.addEventListener('click', ()=>{
