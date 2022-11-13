@@ -1170,6 +1170,7 @@ button, a {
     overflow: hidden;
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
+    width: 100%;
   }
   .work .slider img {
     width: 20%;
