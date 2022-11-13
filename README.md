@@ -30,8 +30,7 @@ Users should be able to:
 
 ### Screenshot
 #### Large Screen Size
-[screencapture-127-0-0-1-5500-starter-code-index-html-2022-11-13-12_16_08.pdf](https://github.com/KarenDouglas/Frontend-Mentor-Design-Portfolio-Challenge/files/9997944/screencapture-127-0-0-1-5500-starter-code-index-html-2022-11-13-12_16_08.pdf)
-
+![screencapture-127-0-0-1-5500-starter-code-index-html-2022-11-13-13_27_16](https://user-images.githubusercontent.com/79128405/201540395-d86072de-3255-4c94-8a45-f17c6371bf94.png)
 #### Medium Screen Size
 
 ![screencapture-frontend-mentor-design-portfolio-challenge-vercel-app-2022-11-13-12_16_32](https://user-images.githubusercontent.com/79128405/201537696-4adb3891-68c2-4b34-9fcf-5c924a574999.png)
