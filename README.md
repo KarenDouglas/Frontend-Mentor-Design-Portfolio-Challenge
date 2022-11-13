@@ -1,89 +1,117 @@
-# Frontend Mentor - Single-page design portfolio
+# Frontend Mentor - Single-page design portfolio solution
 
-![Design preview for the Single-page design portfolio coding challenge](./preview.jpg)
+This is a solution to the [Single-page design portfolio challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/singlepage-design-portfolio-2MMhyhfKVo). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
-## Welcome! 👋
+## Table of contents
 
-Thanks for purchasing this premium Frontend Mentor coding challenge.
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects. These premium challenges are perfect portfolio pieces, so please feel free to use what you create in your portfolio to show others.
 
-**To do this challenge, you need a strong understanding of HTML, CSS, and JavaScript.**
 
-## The challenge
+## Overview
 
-Your challenge is to build out this single-page design portfolio site and get it looking as close to the design as possible.
+### The challenge
 
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
-
-Your users should be able to:
+Users should be able to:
 
 - View the optimal layout for the site depending on their device's screen size
 - See hover states for all interactive elements on the page
 - Navigate the slider using either their mouse/trackpad or keyboard
 
-Want some support on the challenge? [Join our Slack community](https://www.frontendmentor.io/slack) and ask questions in the **#help** channel.
+### Screenshot
+#### Large Screen Size
+[screencapture-127-0-0-1-5500-starter-code-index-html-2022-11-13-12_16_08.pdf](https://github.com/KarenDouglas/Frontend-Mentor-Design-Portfolio-Challenge/files/9997944/screencapture-127-0-0-1-5500-starter-code-index-html-2022-11-13-12_16_08.pdf)
 
-## Where to find everything
+#### Medium Screen Size
 
-Your task is to build out the project to the design file provided. We provide both Sketch and Figma versions of the design, so you can choose which tool you prefer to use. You can download the design file on the platform. **Please be sure not to share them with anyone else.** The design download comes with a `README.md` file as well to help you get set up.
+![screencapture-frontend-mentor-design-portfolio-challenge-vercel-app-2022-11-13-12_16_32](https://user-images.githubusercontent.com/79128405/201537696-4adb3891-68c2-4b34-9fcf-5c924a574999.png)
 
-All the required assets for this project are in the `/assets` folder. The assets are already exported for the correct screen size and optimized. Some images are reusable at multiple screen sizes. So if you don't see an image in a specific folder, it will typically be in another folder for that page.
+### Mobile Screen Size
 
-The design system in the design file will give you more information about the various colors, fonts, and styles used in this project. Our fonts always come from [Google Fonts](https://fonts.google.com/).
+![screencapture-frontend-mentor-design-portfolio-challenge-vercel-app-2022-11-13-12_16_55](https://user-images.githubusercontent.com/79128405/201537818-7c6ffe43-244f-4a1a-b5b4-02b8e0c31144.png)
 
-## Building your project
 
-Feel free to use any workflow that you feel comfortable with. Below is a suggested process, but do not feel like you need to follow these steps:
+### Links
 
-1. Separate the `starter-code` from the rest of this project and rename it to something meaningful for you. Initialize the codebase as a public repository on [GitHub](https://github.com/). Creating a repo will make it easier to share your code with the community if you need help. If you're not sure how to do this, [have a read-through of this Try Git resource](https://try.github.io/). **⚠️ IMPORTANT ⚠️: There are already a couple of `.gitignore` files in this project. Please do not remove them or change the content of the files. If you create a brand new project, please use the `.gitignore` files provided in your new codebase. This is to avoid the accidental upload of the design files to GitHub. With these premium challenges, please be sure not to share the design files in your GitHub repo. Thanks!**
-2. Configure your repository to publish your code to a web address. This will also be useful if you need some help during a challenge as you can share the URL for your project with your repo URL. There are a number of ways to do this, and we provide some recommendations below.
-3. Look through the designs to start planning out how you'll tackle the project. This step is crucial to help you think ahead for CSS classes to create reusable styles.
-4. Before adding any styles, structure your content with HTML. Writing your HTML first can help focus your attention on creating well-structured content.
-5. Write out the base styles for your project, including general content styles, such as `font-family` and `font-size`.
-6. Start adding styles to the top of the page and work down. Only move on to the next section once you're happy you've completed the area you're working on.
+- Live Site URL: [https://frontend-mentor-design-portfolio-challenge.vercel.app/](https://frontend-mentor-design-portfolio-challenge.vercel.app/)
 
-## Deploying your project
+## My process
 
-As mentioned above, there are many ways to host your project for free. Our recommend hosts are:
+### Built with
 
-- [GitHub Pages](https://pages.github.com/)
-- [Vercel](https://vercel.com/)
-- [Netlify](https://www.netlify.com/)
+- HTML5
+- SCSS
+- Flexbox
+- Mobile-first workflow
+- JavaScript
 
-You can host your site using one of these solutions or any of our other trusted providers. [Read more about our recommended and trusted hosts](https://medium.com/frontend-mentor/frontend-mentor-trusted-hosting-providers-bf000dfebe).
 
-## Create a custom `README.md`
 
-We strongly recommend overwriting this `README.md` with a custom one. We've provided a template inside the [`README-template.md`](./README-template.md) file in this starter code.
+### What I learned
 
-The template provides a guide for what to add. A custom `README` will help you explain your project and reflect on your learnings. Please feel free to edit our template as much as you like.
+#### CSS Positioning
+I generally have not used CSS positioning, as flexbox has adequately solved my CSS need before. This challenge, however, required me to look at CSS positioning to deal with alignment issues. Once I learned about "relative" and "absolute" properties, I realized my intimidation was unfounded! Because of this challenge, I look forward to more opportunities to use CSS positioning.
 
-Once you've added your information to the template, delete this file and rename the `README-template.md` file to `README.md`. That will make it show up as your repository's README file.
+#### CSS Images and Clip-path
+Before this project, I would look for images that fit my website, instead of coding it out. However, this project calls for CSS images to complete it. Not only that, I learned about another CSS property, "clip-path" to create shapes.  
+```css
+     button{
+        margin: 10px 0;
+        border: none;
+        clip-path: circle(30%);
+        background-color: $Black;
+        padding: 40px;
+       }
+```
 
-## Submitting your solution
+#### CSS Overflow and Scroll Properties
+I had the temptation to use a CSS framework to build out the slide show part of my project. After some thought, I decided against it, as these frameworks can become a handicap to learning CSS. As a result, I learned about "overflow" and various "scroll" properties to solve this coding problem! 
+```css
+.slider{
+        display: flex;
+        overflow: hidden;
+        scroll-behavior: smooth;
+        scroll-snap-type: x mandatory;
+      
+        img{
+            width: 75%;
+            margin:0 2.5%;
+            scroll-snap-align: center;
+        }
 
-Submit your solution on the platform for the rest of the community to see. Follow our ["Complete guide to submitting solutions"](https://medium.com/frontend-mentor/a-complete-guide-to-submitting-solutions-on-frontend-mentor-ac6384162248) for tips on how to do this.
+```
 
-Remember, if you're looking for feedback on your solution, be sure to ask questions when submitting it. The more specific and detailed you are with your questions, the higher the chance you'll get valuable feedback from the community.
+#### JavaScript getBoundingClientRect()
+ Lastly, I learned about a helpful JavaScript method, getBoundingClientRect()". This method returns the size of an object. I used this method to get the size of the images in my slide show. Then, I used this info to determine how far to scroll to get to the next image in the slide show.
+ ```js
+ nxtBtn.addEventListener('click', ()=>{
+    let imgDimensions = sliderImg.getBoundingClientRect();
+   let imgWidth=  imgDimensions.width;
+    slider.scrollLeft += imgWidth;
+})
+```
 
-**⚠️ IMPORTANT ⚠️: With these premium challenges, please be sure not to upload the design files to GitHub when you're submitting to the platform and sharing it around. If you've created a brand new project, the easiest way to do that is to copy across the `.gitignore` provided in this starter project.**
+### Continued development
 
-## Sharing your solution
+There were times when I coded the CSS for larger screen sizes before coding for the mobile screen size. As a result, I had unnecessary code in my CSS rules. Moving forward, I plan to adhere to 
 
-There are multiple places you can share your solution:
 
-1. Share your solution page in the **#finished-projects** channel of the [Slack community](https://www.frontendmentor.io/slack). 
-2. Tweet [@frontendmentor](https://twitter.com/frontendmentor) and mention **@frontendmentor**, including the repo and live URLs in the tweet. We'd love to take a look at what you've built and help share it around.
-3. Share your solution on other social channels like LinkedIn.
-4. Blog about your experience building your project. Writing about your workflow, technical choices, and talking through your code is a brilliant way to reinforce what you've learned. Great platforms to write on are [dev.to](https://dev.to/), [Hashnode](https://hashnode.com/), and [CodeNewbie](https://community.codenewbie.org/).
+## Author
 
-We provide templates to help you share your solution once you've submitted it on the platform. Please do edit them and include specific questions when you're looking for feedback. 
+- Frontend Mentor - [@KarenDouglas](https://www.frontendmentor.io/profile/KarenDouglas)
+- Twitter - [@CodeNoob4Life](https://twitter.com/CodeNoob4Life)
 
-The more specific you are with your questions the more likely it is that another member of the community will give you feedback.
 
-## Got feedback for us?
 
-We love receiving feedback! We're always looking to improve our challenges and our platform. So if you have anything you'd like to mention, please email hi[at]frontendmentor[dot]io.
 
-**Have fun building!** 🚀
+
